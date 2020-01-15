@@ -41,6 +41,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yv3-Yo-TsF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fi3-Xt-tFf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -48,8 +52,12 @@
                             <constraint firstItem="Vbm-MC-NzO" firstAttribute="top" secondItem="yv3-Yo-TsF" secondAttribute="bottom" constant="1" id="4Ir-uN-VSn"/>
                             <constraint firstItem="yv3-Yo-TsF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6vs-hO-c4w"/>
                             <constraint firstItem="yv3-Yo-TsF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="KT3-39-VLz"/>
+                            <constraint firstItem="Fi3-Xt-tFf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dnt-31-uiO"/>
+                            <constraint firstItem="Fi3-Xt-tFf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="fMD-dX-TM2"/>
                             <constraint firstItem="yv3-Yo-TsF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="iMM-gq-fl1"/>
+                            <constraint firstItem="Fi3-Xt-tFf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="n3y-9s-1It"/>
                             <constraint firstItem="yv3-Yo-TsF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sey-PM-e5M"/>
+                            <constraint firstItem="Fi3-Xt-tFf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="tOe-n9-0XY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vbm-MC-NzO" secondAttribute="bottom" id="xRK-lN-Ow0"/>
                             <constraint firstItem="Vbm-MC-NzO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="y5c-uw-fN1"/>
                         </constraints>
@@ -57,16 +65,21 @@
                     </view>
                     <navigationItem key="navigationItem" id="o7A-32-Ugy">
                         <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XB6-5w-EgX">
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="XB6-5w-EgX">
                             <rect key="frame" x="99" y="7" width="177" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Minha Galeria de Imagens">
+                            <state key="normal" title="Todas as Fotos">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="dropAlbumList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8zm-P0-y9F"/>
+                            </connections>
                         </button>
                     </navigationItem>
                     <connections>
+                        <outlet property="albumListTableView" destination="Fi3-Xt-tFf" id="QN2-0z-HYm"/>
                         <outlet property="imageGalleryCollectionView" destination="Vbm-MC-NzO" id="mfB-fY-po5"/>
+                        <outlet property="selectAlbumButton" destination="XB6-5w-EgX" id="o5B-Kw-UwM"/>
                         <outlet property="selectedImage" destination="yv3-Yo-TsF" id="w3a-0k-Nz5"/>
                     </connections>
                 </viewController>

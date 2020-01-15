@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5947632623CF50680068A550 /* albumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947632423CF50680068A550 /* albumTableViewCell.swift */; };
+		5947632723CF50680068A550 /* albumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5947632523CF50680068A550 /* albumTableViewCell.xib */; };
 		5959641723C36FE10050EEAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959641623C36FE10050EEAE /* AppDelegate.swift */; };
 		5959641923C36FE10050EEAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959641823C36FE10050EEAE /* ViewController.swift */; };
 		5959641C23C36FE10050EEAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5959641A23C36FE10050EEAE /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5947632423CF50680068A550 /* albumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumTableViewCell.swift; sourceTree = "<group>"; };
+		5947632523CF50680068A550 /* albumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = albumTableViewCell.xib; sourceTree = "<group>"; };
 		5959641323C36FE10050EEAE /* CustomImageGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomImageGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5959641623C36FE10050EEAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5959641823C36FE10050EEAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				5959642223C36FE30050EEAE /* Info.plist */,
 				5959644423C375110050EEAE /* CollectionViewCell.swift */,
 				5959644523C375110050EEAE /* CollectionViewCell.xib */,
+				5947632423CF50680068A550 /* albumTableViewCell.swift */,
+				5947632523CF50680068A550 /* albumTableViewCell.xib */,
 			);
 			path = CustomImageGallery;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 			files = (
 				5959642123C36FE30050EEAE /* LaunchScreen.storyboard in Resources */,
 				5959641E23C36FE30050EEAE /* Assets.xcassets in Resources */,
+				5947632723CF50680068A550 /* albumTableViewCell.xib in Resources */,
 				5959644723C375110050EEAE /* CollectionViewCell.xib in Resources */,
 				5959641C23C36FE10050EEAE /* Main.storyboard in Resources */,
 			);
@@ -266,6 +273,7 @@
 				5959641923C36FE10050EEAE /* ViewController.swift in Sources */,
 				5959641723C36FE10050EEAE /* AppDelegate.swift in Sources */,
 				5959644623C375110050EEAE /* CollectionViewCell.swift in Sources */,
+				5947632623CF50680068A550 /* albumTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
